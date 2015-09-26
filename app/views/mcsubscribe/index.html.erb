@@ -1,0 +1,27 @@
+<div class="colorBackground">
+  testing
+</div>
+
+<div class="staticBackground">
+  testing
+</div>
+
+<div class="mainContent">
+  <div class="headerContainer">
+    <h1>PAT McGRATH LABS</h1>
+    <h3>Gold 001</h3>
+  </div>
+
+  <div class="terminalContainer">
+    <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true") do -%>
+    <p><span>01</span>&lt; enter info to gain access to the labs</p>
+    <p><span>02</span>&lt; <%= email_field(:email, :address, {id: "email", placeholder: "email"}) %></p>
+    <p><span>03</span>&lt; <%= submit_tag("send", {id: "subscribe"}) %></p>
+    <% end %>
+  </div>
+
+  <div class="socialContainer">
+    
+  </div>
+
+</div>

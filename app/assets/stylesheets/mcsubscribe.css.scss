@@ -1,0 +1,62 @@
+body {
+  color: #fff;
+  margin: 0;
+}
+
+.mainContent,
+.staticBackground,
+.colorBackground {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+// container z-index settings
+.mainContent {
+  z-index: 3;
+  background: transparent;
+}
+.staticBackground {
+  z-index: 2;
+  background: image-url('signup/static_pre_transparent.gif') no-repeat;
+  background-size: cover;
+}
+
+.colorBackground {
+  z-index: 1;
+}
+
+// MAIN CONTENT STYLE
+.headerContainer {
+  width: 1000px;
+  margin: 0 auto;
+  background: #000;
+  h1  {
+    text-align: center;
+    margin: 0;
+  }
+  h3  {
+    text-align: center;
+  }
+}
+.terminalContainer {
+  color: #fff;
+  width: 1000px;
+  margin: 0 auto;
+  p {
+    background: #000;
+    padding: 5px;
+    span {margin-right: 20px;}
+  }
+  #subscribe {
+    background-color: black;
+    color: white;
+    border: none;
+  }
+  #email {background: #000; border: none; color: #fff;}
+  #email::-webkit-input-placeholder {color: #fff;}
+  #email:-moz-placeholder {color: #fff;}
+  #email::-moz-placeholder {color: #fff;}
+  #email:-ms-input-placeholder {
+    color: #fff;
+  }
+}
