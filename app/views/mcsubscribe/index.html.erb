@@ -11,7 +11,7 @@
   </div>
 
   <div class="terminalContainer">
-    <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true") do -%>
+    <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true",:authenticity_token => true) do -%>
     <p><span>01</span>&lt; &nbsp;enter info to gain access to the labs</p>
     <p><span>02</span>&lt; &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "email"}) %></p>
     <p><span>03</span>&lt; &nbsp;<%= submit_tag("send", {id: "subscribe"}) %></p>
@@ -29,5 +29,7 @@
       </div>
     <!-- </div> -->
   </div>
+
+
 
 </div>
