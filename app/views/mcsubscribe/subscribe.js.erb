@@ -1,0 +1,10 @@
+console.log('meow');
+$.ajax({
+   url:  "/mcsubscribe/subscribe",
+   dataType: "json",
+   data: data,
+   success: function(data) {
+      var r = $.parseJSON(data);
+      console.log(r)//This is where Your users are
+   }
+});

@@ -1,9 +1,7 @@
 <div class="colorBackground">
-  testing
 </div>
 
 <div class="staticBackground">
-  testing
 </div>
 
 <div class="mainContent">
@@ -14,14 +12,22 @@
 
   <div class="terminalContainer">
     <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true") do -%>
-    <p><span>01</span>&lt; enter info to gain access to the labs</p>
-    <p><span>02</span>&lt; <%= email_field(:email, :address, {id: "email", placeholder: "email"}) %></p>
-    <p><span>03</span>&lt; <%= submit_tag("send", {id: "subscribe"}) %></p>
+    <p><span>01</span>&lt; &nbsp;enter info to gain access to the labs</p>
+    <p><span>02</span>&lt; &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "email"}) %></p>
+    <p><span>03</span>&lt; &nbsp;<%= submit_tag("send", {id: "subscribe"}) %></p>
+    <p id="response"><span>04</span>&lt; &nbsp;</p>
     <% end %>
   </div>
 
   <div class="socialContainer">
-    
+    <!-- <div class="socialIcons"> -->
+      <a class="list-group-item" href="#"><i class="fa fa-instagram"></i>&nbsp;</a>
+      <a class="list-group-item" href="#"><i class="fa fa-facebook-square"></i>&nbsp;</a>
+      <a class="list-group-item" href="#"><i class="fa fa-twitter"></i>&nbsp;</a>
+      <div class="footerBranding">
+        &#35;GOLD001 <span>|</span> &#35;PatMcGrathLabs
+      </div>
+    <!-- </div> -->
   </div>
 
 </div>

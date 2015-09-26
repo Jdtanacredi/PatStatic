@@ -2,7 +2,7 @@ class McsubscribeController < ApplicationController
 
 	def index
   end
- 
+
   def subscribe
     email = params[:email][:address]
     if !email.blank?
@@ -10,6 +10,7 @@ class McsubscribeController < ApplicationController
         @mc.lists.subscribe(@list_id, {'email' => email})
         respond_to do |format|
           format.json{render :json => {:message => "Success! Check your email to confirm sign up."}}
+          format.js   {}
         end
         rescue Mailchimp::ListAlreadySubscribedError
           respond_to do |format|
@@ -36,5 +37,4 @@ class McsubscribeController < ApplicationController
           end
         end
   end
-
 end
