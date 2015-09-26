@@ -1,10 +1,11 @@
 body {
   color: #fff;
   margin: 0;
+  // font-family: 'VT323';
 }
 
 .mainContent,
-.staticBackground,
+.randomBackground,
 .colorBackground {
   width: 100vw;
   height: 100vh;
@@ -13,16 +14,19 @@ body {
 // container z-index settings
 .mainContent {
   z-index: 3;
-  background: transparent;
-}
-.staticBackground {
-  z-index: 2;
   background: image-url('signup/static_pre_transparent.gif') no-repeat;
   background-size: cover;
 }
-
+.randomBackground {
+  z-index: 2;
+  background: image-url('signup/image1.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 .colorBackground {
   z-index: 1;
+  background: image-url('signup/finalImage.jpg') no-repeat;
+  background-size: cover;
 }
 
 // MAIN CONTENT STYLE
@@ -30,12 +34,12 @@ body {
   width: 1000px;
   margin: 0 auto;
   background: #000;
+  text-align: center;
   h1  {
-    text-align: center;
     margin: 0;
   }
   h3  {
-    text-align: center;
+    margin-top: 0;
   }
 }
 .terminalContainer {
@@ -56,9 +60,7 @@ body {
   #email::-webkit-input-placeholder {color: #fff;}
   #email:-moz-placeholder {color: #fff;}
   #email::-moz-placeholder {color: #fff;}
-  #email:-ms-input-placeholder {
-    color: #fff;
-  }
+  #email:-ms-input-placeholder {color: #fff;}
 }
 
 .socialContainer {
