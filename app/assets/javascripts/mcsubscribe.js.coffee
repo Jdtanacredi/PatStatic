@@ -11,36 +11,43 @@ $ ->
           $('.staticBackground').fadeOut 600
           $('.colorBackground').css 'z-index', '5'
           $('.confirmationTerminal').css 'visibility', 'visible'
+          $('#email').blur()
           $('#subscribe').blur()
         else if data.error == 1
           $('.staticBackground').fadeOut 600
           $('.colorBackground').css 'z-index', '5'
           $('.confirmationTerminal').css 'visibility', 'visible'
+          $('#email').blur()
           $('#subscribe').blur()
         else if data.error == 2
           $('.staticBackground').fadeOut 600
           $('.colorBackground').css 'z-index', '5'
           $('.confirmationTerminal').css 'visibility', 'visible'
+          $('#email').blur()
           $('#subscribe').blur()
         else if data.error == 3
           $('.staticBackground').fadeOut 600
           $('.colorBackground').css 'z-index', '5'
           $('.confirmationTerminal').css 'visibility', 'visible'
+          $('#email').blur()
           $('#subscribe').blur()
         else if data.error == 4
           $('.staticBackground').fadeOut 600
           $('.colorBackground').css 'z-index', '5'
           $('.confirmationTerminal').css 'visibility', 'visible'
+          $('#email').blur()
           $('#subscribe').blur()
         else if data.error == 5
           $('.staticBackground').fadeOut 600
           $('.colorBackground').css 'z-index', '5'
           $('.confirmationTerminal').css 'visibility', 'visible'
+          $('#email').blur()
           $('#subscribe').blur()
         else
           $('.staticBackground').fadeOut 600
           $('.colorBackground').css 'z-index', '5'
           $('.confirmationTerminal').css 'visibility', 'visible'
+          $('#email').blur()
           $('#subscribe').blur()
         return false
       error:(data) ->
