@@ -202,7 +202,10 @@ body {
     margin: 0 auto;
     font-size: 1.75em;
   }
-  .terminalContainer {padding: 5px 0;}
+  .terminalContainer {
+    padding: 5px 0;
+    width: 95%;
+  }
   .socialContainer {
     font-size: 1em;
     padding: 8px 0;
