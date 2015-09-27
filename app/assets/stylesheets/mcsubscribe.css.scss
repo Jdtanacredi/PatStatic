@@ -212,6 +212,7 @@ body {
 
 @media handheld, screen and (max-width: 520px) {
   .headerContainer {
+    padding-bottom: 5px;
     img {
       width: 180px;
     }
