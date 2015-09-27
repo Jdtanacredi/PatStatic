@@ -53,6 +53,7 @@ body {
 .headerContainer {
   margin: 0 auto;
   padding-top: 15px;
+  padding-bottom: 10px;
   background: #000;
   text-align: center;
   position: fixed;
@@ -182,6 +183,10 @@ body {
   background: #000;
   text-align: center;
 }
+.countdownMarkers {
+    background-color: black;
+    text-align: center;
+}
 
 
 
@@ -219,6 +224,10 @@ body {
     margin: 0 auto;
     font-size: 1.75em;
   }
+  .countdownMarkers {
+    letter-spacing: 31px;
+    padding-left: 33px;
+  }
   .terminalContainer {
     padding: 5px 0;
     width: 320px;
@@ -246,5 +255,9 @@ body {
 @media handheld, screen and (max-width: 400px) {
   .confirmationTerminal {
     min-width: 300px;
+  }
+  .countdownMarkers {
+    letter-spacing: 31px;
+    padding-left: 15px;
   }
 }
