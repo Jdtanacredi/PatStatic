@@ -7,20 +7,34 @@ $ ->
       url: "/mcsubscribe/subscribe",
       data: { email: { address: $("#email").val()} },
       success:(data) ->
-        console.log data
         if data.error == 0
           $('.staticBackground').fadeOut 600
           $('.colorBackground').css 'z-index', '5'
           $('.confirmationTerminal').css 'visibility', 'visible'
-
         else if data.error == 1
+          $('.staticBackground').fadeOut 600
+          $('.colorBackground').css 'z-index', '5'
+          $('.confirmationTerminal').css 'visibility', 'visible'
         else if data.error == 2
+          $('.staticBackground').fadeOut 600
+          $('.colorBackground').css 'z-index', '5'
+          $('.confirmationTerminal').css 'visibility', 'visible'
         else if data.error == 3
-
+          $('.staticBackground').fadeOut 600
+          $('.colorBackground').css 'z-index', '5'
+          $('.confirmationTerminal').css 'visibility', 'visible'
         else if data.error == 4
-
+          $('.staticBackground').fadeOut 600
+          $('.colorBackground').css 'z-index', '5'
+          $('.confirmationTerminal').css 'visibility', 'visible'
         else if data.error == 5
+          $('.staticBackground').fadeOut 600
+          $('.colorBackground').css 'z-index', '5'
+          $('.confirmationTerminal').css 'visibility', 'visible'
         else
+          $('.staticBackground').fadeOut 600
+          $('.colorBackground').css 'z-index', '5'
+          $('.confirmationTerminal').css 'visibility', 'visible'
         return false
       error:(data) ->
         console.log data
