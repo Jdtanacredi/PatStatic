@@ -57,6 +57,7 @@ body {
     margin: 0;
     letter-spacing: 2px;
   }
+  img {width: 100%;}
 }
 .terminalContainer {
   color: #fff;
@@ -176,5 +177,17 @@ body {
     width: 80%;
     margin: 0 auto;
     font-size: 1.75em;
+  }
+  .terminalContainer {padding: 5px 0;}
+  .socialContainer {
+    font-size: 1em;
+    padding: 8px 0;
+    .footerBranding {
+      letter-spacing: 2px;
+      font-size: 0.8em;
+      margin-left: 0px;
+      display: inline-block;
+    }
+    .fa {margin: 0;}
   }
 }
