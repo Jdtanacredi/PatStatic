@@ -19,10 +19,10 @@
 <div class="mainContent">
   <div class="terminalContainer">
     <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true",:authenticity_token => true) do -%>
-    <p><span>01</span>&lt; &nbsp;Sign up for access to labs</p>
-    <p><span>02</span>&lt; <span class="blinker">&#9646;</span> &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "Enter Your Email"}) %></p>
-    <p><span>03</span>&lt; &nbsp;<%= submit_tag("Send", {id: "subscribe"}) %></p>
-    <p id="response"><span>04</span>&lt; &nbsp;</p>
+    <p><!--<span>01</span>-->&lt; &nbsp;Sign up for priority access to launch&nbsp; &gt;</p>
+    <p><!--<span>02</span>--><span class="blinker">&#9646;</span> &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "Enter Your Email"}) %> <%= submit_tag("SUBMIT", {id: "subscribe"}) %></p>
+    <!-- <p><span>03</span>&lt; &nbsp;<%= submit_tag("Send", {id: "subscribe"}) %></p> -->
+    <!-- <p id="response"><span>04</span>&lt; &nbsp;</p> -->
     <% end %>
   </div>
 </div>
@@ -33,7 +33,7 @@
     <a class="list-group-item" target="_blank" href="https://www.facebook.com/PatMcGrathReal"><i class="fa fa-facebook-square"></i>&nbsp;</a>
     <a class="list-group-item" target="_blank" href="https://twitter.com/patmcgrathreal"><i class="fa fa-twitter"></i>&nbsp;</a>
     <div class="footerBranding">
-      &#35;GOLD001 <span>|</span> &#35;PatMcGrathLabs
+      &#35;GOLD001 <span>|</span> <a href="#">Contact</a>
     </div>
   <!-- </div> -->
 </div>
