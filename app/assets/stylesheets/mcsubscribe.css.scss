@@ -118,23 +118,38 @@ body {
 }
 
  .blinker {
-	font-size: 42px;
-	position: absolute;
-	top:-15px;
-
-  -webkit-animation-direction: normal;
-  -webkit-animation-duration: 1.2s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: blink;
-  -webkit-animation-timing-function: ease;
+   background: #fff;
+    animation: blink 1s linear infinite;
+    -webkit-animation: blink 1s infinite linear;
+    -ms-animation: blink 1s infinite linear;
+    -moz-animation: blink 1s infinite linear;
 }
 
-@-webkit-keyframes 'blink' {
-    0% { opacity:0 }
-    25% { opacity:1 }
-    50% { opacity: 1 }
-    75% { opacity: 1 }
-    100% { opacity: 0 }
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-ms-keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 // COUNTDOWN
