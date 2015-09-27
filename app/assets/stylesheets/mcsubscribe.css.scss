@@ -204,6 +204,7 @@ body {
     width: 100%;
   }
 }
+
 @media handheld, screen and (max-width: 520px) {
   .headerContainer {
     img {
@@ -214,7 +215,7 @@ body {
     width: 80%;
   }
   #countdown {
-    width: 80%;
+    // width: 80%;
     margin: 0 auto;
     font-size: 1.75em;
   }
@@ -239,5 +240,11 @@ body {
       display: inline-block;
     }
     .fa {margin: 0;}
+  }
+}
+
+@media handheld, screen and (max-width: 400px) {
+  .confirmationTerminal {
+    min-width: 300px;
   }
 }
