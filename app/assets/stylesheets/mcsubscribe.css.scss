@@ -1,7 +1,16 @@
+@font-face {
+  font-family: 'courier';
+  src: url('courier.eot'); /* IE9 Compat Modes */
+  src: url('courier.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('courier.woff2') format('woff2'), /* Super Modern Browsers */
+       url('courier.woff') format('woff'), /* Pretty Modern Browsers */
+       url('courier.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
 body {
   color: #fff;
   margin: 0;
-  // font-family: 'VT323';
+  font-family: 'courier';
 }
 
 .mainContent,
@@ -37,8 +46,8 @@ body {
 
 // MAIN CONTENT STYLE
 .headerContainer {
-  width: 1000px;
   margin: 0 auto;
+  padding-top: 15px;
   background: #000;
   text-align: center;
   h1  {
@@ -55,26 +64,30 @@ body {
   p {
     background: #000;
     padding: 5px;
+    position: relative;
     span {margin-right: 20px;}
   }
   #subscribe {
     background-color: black;
     color: white;
     border: none;
+    font-family: 'courier';
   }
-  #email {background: #000; border: none; color: #fff;}
-  #email::-webkit-input-placeholder {color: #fff;}
-  #email:-moz-placeholder {color: #fff;}
-  #email::-moz-placeholder {color: #fff;}
-  #email:-ms-input-placeholder {color: #fff;}
+  #email {background: #000; border: none; color: #fff;margin-left: 30px;}
+  #email::-webkit-input-placeholder {color: #fff; font-family: 'courier';}
+  #email:-moz-placeholder {color: #fff;font-family: 'courier';}
+  #email::-moz-placeholder {color: #fff;font-family: 'courier';}
+  #email:-ms-input-placeholder {color: #fff;font-family: 'courier';}
 }
 
 .socialContainer {
   background: #000;
   color: #fff;
+  position: fixed;
   text-align: center;
-  margin-top: 250px;
-  padding: 5px;
+  width: 100%;
+  padding: 20px 0;
+  bottom: 100px;
   a {
     text-decoration: none;
     color: #fff;
@@ -89,7 +102,25 @@ body {
   }
 }
 
+ .blinker {
+	font-size: 42px;
+	position: absolute;
+	top:-15px;
 
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: blink;
+  -webkit-animation-timing-function: ease;
+}
+
+@-webkit-keyframes 'blink' {
+    0% { opacity:0 }
+    25% { opacity:1 }
+    50% { opacity: 1 }
+    75% { opacity: 1 }
+    100% { opacity: 0 }
+}
 
 // MOBILE
 @media handheld, screen and (max-width: 1000px) {
