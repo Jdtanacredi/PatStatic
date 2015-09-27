@@ -61,9 +61,10 @@ body {
 .terminalContainer {
   color: #fff;
   width: 510px;
-  margin: 0 auto;
+  margin: 40px auto 0;
   background: #000;
   letter-spacing: 2px;
+  padding: 20px 15px;
   p {
     text-align: center;
     background: #000;
@@ -78,6 +79,10 @@ body {
     font-family: 'courier';
     font-size: 16px;
     letter-spacing: 2px;
+    cursor: pointer;
+    &:hover {
+      color: #FFD700;
+    }
   }
   #email {background: #000; border: none; color: #fff;margin-left: 30px; font-size: 16px;letter-spacing: 2px;}
   #email::-webkit-input-placeholder {color: #fff; font-family: 'courier';}

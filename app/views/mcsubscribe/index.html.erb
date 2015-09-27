@@ -20,7 +20,7 @@
   <div class="terminalContainer">
     <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true",:authenticity_token => true) do -%>
     <p><!--<span>01</span>-->&lt; &nbsp;Sign up for priority access to launch&nbsp; &gt;</p>
-    <p><!--<span>02</span>--><span class="blinker">&#9646;</span> &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "Enter Your Email"}) %> <%= submit_tag("SUBMIT", {id: "subscribe"}) %></p>
+    <p><!--<span>02</span>--><span class="blinker">&#9646;</span> &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "enter email here"}) %> <%= submit_tag("SUBMIT", {id: "subscribe"}) %></p>
     <!-- <p><span>03</span>&lt; &nbsp;<%= submit_tag("Send", {id: "subscribe"}) %></p> -->
     <!-- <p id="response"><span>04</span>&lt; &nbsp;</p> -->
     <% end %>
