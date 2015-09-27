@@ -220,11 +220,14 @@ body {
   }
   .terminalContainer {
     padding: 5px 0;
-    width: 300px;
+    width: 320px;
     #email {
       margin-right: 0;
+      min-width: 186px;
     }
-    p {font-size: .8em;}
+    p {
+      letter-spacing: 1px;
+    }
   }
   .socialContainer {
     font-size: 1em;
