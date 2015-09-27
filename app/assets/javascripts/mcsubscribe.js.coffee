@@ -11,6 +11,7 @@ $ ->
         if data.error == 0
           $('.staticBackground').fadeOut 600
           $('.colorBackground').css 'z-index', '5'
+          $('.confirmationTerminal').css 'visibility', 'visible'
 
         else if data.error == 1
         else if data.error == 2
