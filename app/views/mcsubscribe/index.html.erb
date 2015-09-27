@@ -37,37 +37,3 @@
     </div>
   <!-- </div> -->
 </div>
-
-
-<script type="text/javascript">
-// Regular function with arguments
-var imgArray = ['Color-01','Color-02','Color-03','Color-04','Color-05'];
-// function randomNoRepeats(imgArray) {
-//   var copy = array.slice(0);
-//   return function() {
-//     if (copy.length < 1) { copy = array.slice(0); }
-//     var index = Math.floor(Math.random() * copy.length);
-//     var item = copy[index];
-//     copy.splice(index, 1);
-//     return item;
-//   };
-// }
-var image;
-function my_func(){
-     image = imgArray[Math.floor(Math.random() * imgArray.length)];
-     console.log('background','url("/assets/signup/'+ image +')"');
-    // Do The Thing Here
-    $('.randomBackground').css({
-      'background':'url("/assets/signup/'+ image +'.png")',
-      'background-size':'cover',
-      'background-repeat':'no-repeat'
-    });
-    $('.staticBackground').fadeOut(600).fadeIn(600)
-    setTimeout(function(){
-         my_func();
-    },5000); // Adjust the timeout value as you like
-}
-setTimeout(my_func,5000)
-
-
-</script>
