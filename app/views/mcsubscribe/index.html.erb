@@ -1,4 +1,15 @@
 <div class="colorBackground">
+  <div class="confirmationTerminal">
+    <p>&lt; You're Golden &gt;</p>
+    <p>&lt; E-mail confirmation is on the way &gt;</p>
+    <p>&lt; Gold arroves om T-minus &gt;</p>
+    <div id="countdown"></div>
+    <script type="text/javascript">
+      $('#countdown').countdown('2016/01/01', function(event) {
+        $(this).html(event.strftime('%d : %H : %M : %S'));
+      });
+    </script>
+  </div>
 </div>
 <div class="staticBackground">
 </div>
@@ -6,34 +17,25 @@
 </div>
 
 <div class="mainContent">
-  <div class="headerContainer">
-    <%= image_tag('logo.png'); %>
-    <!-- <h1>PAT McGRATH LABS</h1> -->
-    <h3>Gold 001</h3>
-  </div>
-
   <div class="terminalContainer">
     <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true",:authenticity_token => true) do -%>
-    <p><span>01</span>&lt; &nbsp;enter info to gain access to the labs</p>
+    <p><span>01</span>&lt; &nbsp;Sign up for access to labs</p>
     <p><span>02</span>&lt; <span class="blinker">&#9646;</span> &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "Enter Your Email"}) %></p>
     <p><span>03</span>&lt; &nbsp;<%= submit_tag("Send", {id: "subscribe"}) %></p>
     <p id="response"><span>04</span>&lt; &nbsp;</p>
     <% end %>
   </div>
+</div>
 
-  <div class="socialContainer">
-    <!-- <div class="socialIcons"> -->
-      <a class="list-group-item" target="_blank" href="https://instagram.com/patmcgrathreal/"><i class="fa fa-instagram"></i>&nbsp;</a>
-      <a class="list-group-item" target="_blank" href="https://www.facebook.com/PatMcGrathReal"><i class="fa fa-facebook-square"></i>&nbsp;</a>
-      <a class="list-group-item" target="_blank" href="https://twitter.com/patmcgrathreal"><i class="fa fa-twitter"></i>&nbsp;</a>
-      <div class="footerBranding">
-        &#35;GOLD001 <span>|</span> &#35;PatMcGrathLabs
-      </div>
-    <!-- </div> -->
-  </div>
-
-
-
+<div class="socialContainer">
+  <!-- <div class="socialIcons"> -->
+    <a class="list-group-item" target="_blank" href="https://instagram.com/patmcgrathreal/"><i class="fa fa-instagram"></i>&nbsp;</a>
+    <a class="list-group-item" target="_blank" href="https://www.facebook.com/PatMcGrathReal"><i class="fa fa-facebook-square"></i>&nbsp;</a>
+    <a class="list-group-item" target="_blank" href="https://twitter.com/patmcgrathreal"><i class="fa fa-twitter"></i>&nbsp;</a>
+    <div class="footerBranding">
+      &#35;GOLD001 <span>|</span> &#35;PatMcGrathLabs
+    </div>
+  <!-- </div> -->
 </div>
 
 
