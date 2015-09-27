@@ -57,11 +57,13 @@ function my_func(){
      image = imgArray[Math.floor(Math.random() * imgArray.length)];
      console.log('background','url("/assets/signup/'+ image +')"');
     // Do The Thing Here
-    $('.randomBackground').css({
-      'background':'url("/assets/signup/'+ image +'.png")',
-      'background-size':'cover',
-      'background-repeat':'no-repeat'
-    });
+    // $('.randomBackground').css({
+    //   'background':'url("/assets/signup/'+ image +'.png")',
+    //   'background-size':'cover',
+    //   'background-repeat':'no-repeat'
+    // });
+    $('.randomBackground').attr('class', 'randomBackground');
+    $('.randomBackground').addClass(image);
     $('.staticBackground').fadeOut(600).fadeIn(600)
     setTimeout(function(){
          my_func();

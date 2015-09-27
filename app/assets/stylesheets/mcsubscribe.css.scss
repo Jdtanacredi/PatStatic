@@ -34,7 +34,7 @@ body {
 }
 .randomBackground {
   z-index: 2;
-  background: image-url('signup/image1.jpg') no-repeat;
+  // background: image-url('signup/image1.jpg') no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -43,6 +43,11 @@ body {
   background: image-url('signup/finalImage.jpg') no-repeat;
   background-size: cover;
 }
+.randomBackground.Color-01 {background: image-url('signup/Color-01.png') no-repeat;}
+.randomBackground.Color-02 {background: image-url('signup/Color-02.png') no-repeat;}
+.randomBackground.Color-03 {background: image-url('signup/Color-03.png') no-repeat;}
+.randomBackground.Color-04 {background: image-url('signup/Color-04.png') no-repeat;}
+.randomBackground.Color-05 {background: image-url('signup/Color-05.png') no-repeat;}
 
 // MAIN CONTENT STYLE
 .headerContainer {
@@ -65,7 +70,7 @@ body {
   color: #fff;
   width: 510px;
   margin: 30vh auto 0;
-  background: #000;
+  // background: #000;
   letter-spacing: 2px;
   padding: 20px 15px;
   p {
@@ -181,7 +186,7 @@ body {
     // width: 95%;
     width: 438px;
     color: #fff;
-    background: #000;
+    // background: #000;
     padding: 10px 0;
   }
   .socialContainer {
