@@ -50,6 +50,9 @@ body {
   padding-top: 15px;
   background: #000;
   text-align: center;
+  position: fixed;
+  z-index: 6;
+  width: 100%;
   h1  {
     margin: 0;
   }
@@ -61,7 +64,7 @@ body {
 .terminalContainer {
   color: #fff;
   width: 510px;
-  margin: 40px auto 0;
+  margin: 30vh auto 0;
   background: #000;
   letter-spacing: 2px;
   padding: 20px 15px;
@@ -84,7 +87,7 @@ body {
       color: #FFD700;
     }
   }
-  #email {background: #000; border: none; color: #fff;margin-left: 30px; font-size: 16px;letter-spacing: 2px;}
+  #email {background: #000; border: none; color: #fff;margin-right: 70px; font-size: 16px;letter-spacing: 2px;}
   #email::-webkit-input-placeholder {color: #fff; font-family: 'courier';}
   #email:-moz-placeholder {color: #fff;font-family: 'courier';}
   #email::-moz-placeholder {color: #fff;font-family: 'courier';}
@@ -155,8 +158,9 @@ body {
 // COUNTDOWN
 .confirmationTerminal {
   width: 500px;
-  margin: 80px auto 0;
+  margin: 30vh auto 0;
   visibility: hidden;
+  p {margin: 0;}
 }
 
 #countdown {
@@ -172,11 +176,11 @@ body {
   .mainContent {font-size: .8em;}
   .headerContainer {width: 100%;}
   .terminalContainer {
-    width: 95%;
+    // width: 95%;
+    width: 438px;
     color: #fff;
-    margin: 30px auto 0;
     background: #000;
-    padding: 10px 5px;
+    padding: 10px 0;
   }
   .socialContainer {
     position: fixed;
