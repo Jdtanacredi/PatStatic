@@ -8,15 +8,15 @@
 <div class="mainContent">
   <div class="headerContainer">
     <%= image_tag('logo.png'); %>
-    <!-- <h1>PAT McGRATH LABS</h1>
-    <h3>Gold 001</h3> -->
+    <!-- <h1>PAT McGRATH LABS</h1> -->
+    <h3>Gold 001</h3>
   </div>
 
   <div class="terminalContainer">
     <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true",:authenticity_token => true) do -%>
     <p><span>01</span>&lt; &nbsp;enter info to gain access to the labs</p>
-    <p><span>02</span>&lt; <span class="blinker">&#9646;</span> &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "email"}) %></p>
-    <p><span>03</span>&lt; &nbsp;<%= submit_tag("send", {id: "subscribe"}) %></p>
+    <p><span>02</span>&lt; <span class="blinker">&#9646;</span> &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "Enter Your Email"}) %></p>
+    <p><span>03</span>&lt; &nbsp;<%= submit_tag("Send", {id: "subscribe"}) %></p>
     <p id="response"><span>04</span>&lt; &nbsp;</p>
     <% end %>
   </div>
@@ -66,4 +66,6 @@ function my_func(){
     },5000); // Adjust the timeout value as you like
 }
 setTimeout(my_func,5000)
+
+
 </script>
