@@ -43,6 +43,7 @@ body {
   z-index: 1;
   background: image-url('signup/finalImage.jpg') no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 .randomBackground.Color-01 {background: image-url('signup/Color-01.png') no-repeat; background-size: cover;}
 .randomBackground.Color-02 {background: image-url('signup/Color-02.png') no-repeat; background-size: cover;}
@@ -188,7 +189,7 @@ body {
     margin: 0;
   }
   .countdownContainer .stayTuned {
-    padding-top: 5px;
+    padding-top: 8px;
   }
 }
 
