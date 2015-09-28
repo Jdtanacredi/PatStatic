@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'courier';
-  src: url('courier.eot'); /* IE9 Compat Modes */
-  src: url('courier.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('courier.woff2') format('woff2'), /* Super Modern Browsers */
-       url('courier.woff') format('woff'), /* Pretty Modern Browsers */
-       url('courier.ttf')  format('truetype') /* Safari, Android, iOS */
+  src: url('courier.eot');
+  src: url('courier.eot?#iefix') format('embedded-opentype');
+  src: url('courier.woff2') format('woff2');
+  src: url('courier.woff') format('woff');
+  src: url('courier.ttf') format('truetype');
 }
 
 body {
