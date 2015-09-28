@@ -3,7 +3,10 @@
     <!-- <p>&lt; You're Golden &gt;</p> -->
     <p>&lt; ACCESS GRANTED &gt;</p>
     <p>&lt; Countdown to Gold 001 &gt;</p>
-    <div id="countdown"></div>
+    <div>
+      <div id="countdown"></div>
+      <!-- <div class="countdownMarkers"><span>Days</span> <span>Hours</span> <span>Minutes</span> <span>Seconds</span></div> -->
+    </div>
     <script type="text/javascript">
       $('#countdown').countdown('2016/01/01', function(event) {
         $(this).html(event.strftime('%d : %H : %M : %S'));
@@ -53,23 +56,23 @@ var imgArray = ['Color-01','Color-02','Color-03','Color-04','Color-05'];
 //   };
 // }
 var image;
-// function my_func(){
-//      image = imgArray[Math.floor(Math.random() * imgArray.length)];
-//      console.log('background','url("/assets/signup/'+ image +')"');
-//     // Do The Thing Here
-//     // $('.randomBackground').css({
-//     //   'background':'url("/assets/signup/'+ image +'.png")',
-//     //   'background-size':'cover',
-//     //   'background-repeat':'no-repeat'
-//     // });
-//     $('.randomBackground').attr('class', 'randomBackground');
-//     $('.randomBackground').addClass(image);
-//     $('.staticBackground').fadeOut(600).fadeIn(600)
-//     setTimeout(function(){
-//          my_func();
-//     },5000); // Adjust the timeout value as you like
-// }
-// setTimeout(my_func,5000)
+function my_func(){
+     image = imgArray[Math.floor(Math.random() * imgArray.length)];
+     console.log('background','url("/assets/signup/'+ image +')"');
+    // Do The Thing Here
+    // $('.randomBackground').css({
+    //   'background':'url("/assets/signup/'+ image +'.png")',
+    //   'background-size':'cover',
+    //   'background-repeat':'no-repeat'
+    // });
+    $('.randomBackground').attr('class', 'randomBackground');
+    $('.randomBackground').addClass(image);
+    $('.staticBackground').fadeOut(600).fadeIn(600)
+    setTimeout(function(){
+         my_func();
+    },5000); // Adjust the timeout value as you like
+}
+setTimeout(my_func,5000)
 
 
 </script>
