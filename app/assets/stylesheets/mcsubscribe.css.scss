@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'courier';
-  src: url('courier.eot');
-  src: url('courier.eot?#iefix') format('embedded-opentype');
-  src: url('courier.woff2') format('woff2');
-  src: url('courier.woff') format('woff');
-  src: url('courier.ttf') format('truetype');
+  src: url(asset_path('courier.eot'));
+  src: url(asset_path('courier.eot?#iefix')) format('embedded-opentype');
+  src: url(asset_path('courier.woff2')) format('woff2');
+  src: url(asset_path('courier.woff')) format('woff');
+  src: url(asset_path('courier.ttf')) format('truetype');
 }
 
 body {
