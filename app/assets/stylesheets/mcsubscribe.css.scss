@@ -88,16 +88,16 @@ body {
   }
   #subscribe {
     background-color: black;
-    color: white;
+    color: red;
     border: none;
     font-family: 'courier';
     font-size: 16px;
     letter-spacing: 2px;
     cursor: pointer;
     -webkit-appearance: none;
-    &:hover {
-      color: #FFD700;
-    }
+    // &:hover {
+    //   color: #FFD700;
+    // }
   }
   #email {background: #000; border: none; color: #fff;margin-right: 70px; font-size: 16px;letter-spacing: 2px; min-width: 133px;}
   #email::-webkit-input-placeholder {color: #fff; font-family: 'courier';}
@@ -169,13 +169,26 @@ body {
 
 // COUNTDOWN
 .confirmationTerminal {
-  width: 455px;
+  width: 489px;
   margin: 30vh auto 0;
   visibility: hidden;
   p {
     margin: 10px 0;
     background: #000;
     padding: 5px 10px;
+  }
+  .accessGranted {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .countdownContainer {position: relative;}
+  .countdownContainer p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .countdownContainer .stayTuned {
+    padding-top: 5px;
   }
 }
 
@@ -185,8 +198,17 @@ body {
   text-align: center;
 }
 .countdownMarkers {
+    height: 27px;
     background-color: black;
     text-align: center;
+    .countdownMarkers
+    p {
+      position: absolute
+    }
+    .days {position: absolute; left: 28px;}
+    .hours {position: absolute; left: 154px;}
+    .minutes {position: absolute; right: 140px;}
+    .seconds {position: absolute; right: 14px;}
 }
 
 
@@ -227,7 +249,7 @@ body {
     font-size: 1.75em;
   }
   .countdownMarkers {
-    letter-spacing: 31px;
+    // letter-spacing: 31px;
     padding-left: 33px;
   }
   .terminalContainer {
@@ -252,6 +274,7 @@ body {
     }
     .fa {margin: 0;}
   }
+  .countdownMarkers {display: none;}
 }
 
 @media handheld, screen and (max-width: 400px) {

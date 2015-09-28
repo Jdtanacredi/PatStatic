@@ -1,11 +1,18 @@
 <div class="colorBackground">
   <div class="confirmationTerminal">
     <!-- <p>&lt; You're Golden &gt;</p> -->
-    <p>&lt; ACCESS GRANTED &gt;</p>
-    <p>&lt; Countdown to Gold 001 &gt;</p>
-    <div>
+    <p class="accessGranted">/* ACCESS GRANTED */</p>
+    <!-- <p>&lt; Countdown to Gold 001 &gt;</p> -->
+    <div class="countdownContainer">
+      <p class="stayTuned">STAY TUNED FOR GOLD 001</p>
+      <p>LAUNCH NOTIFICATIONS</p>
       <div id="countdown"></div>
-      <!-- <div class="countdownMarkers"><span>Days</span> <span>Hours</span> <span>Minutes</span> <span>Seconds</span></div> -->
+      <div class="countdownMarkers">
+        <p class="days">DAYS</p>
+        <p class="hours">HOURS</p>
+        <p class="minutes">MINUTES</p>
+        <p class="seconds">SECONDS</p>
+      </div>
     </div>
     <script type="text/javascript">
       $('#countdown').countdown('2016/01/01', function(event) {
@@ -67,11 +74,11 @@ function my_func(){
     // });
     $('.randomBackground').attr('class', 'randomBackground');
     $('.randomBackground').addClass(image);
-    $('.staticBackground').fadeOut(600).fadeIn(600)
+    $('.staticBackground').fadeOut(600).fadeIn(600);
     setTimeout(function(){
          my_func();
-    },5000); // Adjust the timeout value as you like
+    },7000); // Adjust the timeout value as you like
 }
-setTimeout(my_func,5000)
+setTimeout(my_func,8000)
 
 </script>
