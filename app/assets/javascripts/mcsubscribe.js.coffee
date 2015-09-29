@@ -1,6 +1,11 @@
 # {"utf8"=>"✓", "email"=>{"address"=>"johnny@gmail.com"}, "commit"=>"send", "controller"=>"mcsubscribe", "action"=>"subscribe"}
 $(document).ready ->
   $ ->
+    do ->
+      document.getElementById('email').focus()
+    return
+
+
     # Countdown Clock
     $('#countdown').countdown '2016/01/01', (event) ->
       $(this).html event.strftime('%d : %H : %M : %S')

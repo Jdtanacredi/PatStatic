@@ -41,7 +41,7 @@ body {
 }
 .colorBackground {
   z-index: 1;
-  background: image-url('signup/Color-01.jpg') no-repeat;
+  background: image-url('signup/finalImage.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -105,6 +105,11 @@ body {
   #email:-moz-placeholder {color: #fff;font-family: 'courier';}
   #email::-moz-placeholder {color: #fff;font-family: 'courier';}
   #email:-ms-input-placeholder {color: #fff;font-family: 'courier';}
+}
+input[type=email]:focus {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+  border: 1px solid white;
+  outline: 0;
 }
 
 .socialContainer {
