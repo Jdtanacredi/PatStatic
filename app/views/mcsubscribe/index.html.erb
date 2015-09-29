@@ -15,9 +15,6 @@
       </div>
     </div>
     <script type="text/javascript">
-      $('#countdown').countdown('2016/01/01', function(event) {
-        $(this).html(event.strftime('%d : %H : %M : %S'));
-      });
     </script>
   </div>
 </div>
@@ -43,42 +40,47 @@
     <a class="list-group-item" target="_blank" href="https://www.facebook.com/PatMcGrathReal"><i class="fa fa-facebook-square"></i>&nbsp;</a>
     <a class="list-group-item" target="_blank" href="https://twitter.com/patmcgrathreal"><i class="fa fa-twitter"></i>&nbsp;</a>
     <div class="footerBranding">
-      &#35;GOLD001 <span>|</span> <a href="#">Contact</a>
+      &#35;Gold001 <span>|</span> <a href="#">Contact</a>
     </div>
   <!-- </div> -->
 </div>
 
 
 <script type="text/javascript">
+
+$('#countdown').countdown('2016/01/01', function(event) {
+  $(this).html(event.strftime('%d : %H : %M : %S'));
+});
+
+
 // Regular function with arguments
-var imgArray = ['Color-01','Color-02','Color-03','Color-04','Color-05'];
-// function randomNoRepeats(imgArray) {
-//   var copy = array.slice(0);
-//   return function() {
-//     if (copy.length < 1) { copy = array.slice(0); }
-//     var index = Math.floor(Math.random() * copy.length);
-//     var item = copy[index];
-//     copy.splice(index, 1);
-//     return item;
-//   };
+// var imgArray = ['Color-01','Color-02','Color-03','Color-04','Color-05'];
+// // function randomNoRepeats(imgArray) {
+// //   var copy = array.slice(0);
+// //   return function() {
+// //     if (copy.length < 1) { copy = array.slice(0); }
+// //     var index = Math.floor(Math.random() * copy.length);
+// //     var item = copy[index];
+// //     copy.splice(index, 1);
+// //     return item;
+// //   };
+// // }
+// var image;
+// function my_func(){
+//      image = imgArray[Math.floor(Math.random() * imgArray.length)];
+//     // Do The Thing Here
+//     // $('.randomBackground').css({
+//     //   'background':'url("/assets/signup/'+ image +'.png")',
+//     //   'background-size':'cover',
+//     //   'background-repeat':'no-repeat'
+//     // });
+//     $('.randomBackground').attr('class', 'randomBackground');
+//     $('.randomBackground').addClass(image);
+//     $('.staticBackground').fadeOut(100).fadeIn(300);
+//     setTimeout(function(){
+//          my_func();
+//     },7000); // Adjust the timeout value as you like
 // }
-var image;
-function my_func(){
-     image = imgArray[Math.floor(Math.random() * imgArray.length)];
-     console.log('background','url("/assets/signup/'+ image +')"');
-    // Do The Thing Here
-    // $('.randomBackground').css({
-    //   'background':'url("/assets/signup/'+ image +'.png")',
-    //   'background-size':'cover',
-    //   'background-repeat':'no-repeat'
-    // });
-    $('.randomBackground').attr('class', 'randomBackground');
-    $('.randomBackground').addClass(image);
-    $('.staticBackground').fadeOut(100).fadeIn(300);
-    setTimeout(function(){
-         my_func();
-    },7000); // Adjust the timeout value as you like
-}
-setTimeout(my_func,8000)
+// setTimeout(my_func,8000)
 
 </script>
