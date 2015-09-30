@@ -96,9 +96,9 @@ body {
     letter-spacing: 2px;
     cursor: pointer;
     -webkit-appearance: none;
-    // &:hover {
-    //   color: #FFD700;
-    // }
+    &:hover {
+      color: #FFF;
+    }
   }
   #email {background: #000; border: none; color: #fff;margin-right: 70px; font-size: 16px;letter-spacing: 2px; min-width: 133px;}
   #email::-webkit-input-placeholder {color: #fff; font-family: 'courier';}
