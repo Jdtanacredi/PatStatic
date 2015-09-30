@@ -1,4 +1,3 @@
-# {"utf8"=>"✓", "email"=>{"address"=>"johnny@gmail.com"}, "commit"=>"send", "controller"=>"mcsubscribe", "action"=>"subscribe"}
 $(document).ready ->
   $ ->
     do ->
