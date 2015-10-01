@@ -27,7 +27,8 @@ $(document).ready ->
     $('#subscribe').blur()
     console.log response
 
-  $("#subscribe").click ->
+  $("#subscribe").click (event) ->
+    event.preventDefault()
     $.ajax({
       type: "POST",
       url: "/mcsubscribe/subscribe",
