@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'mailchimp-api'
 gem "font-awesome-rails"
 gem "figaro"
+gem 'jwt'
 
 group :development, :test do
 	gem 'pry'

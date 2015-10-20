@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'products/index'
+
+  get 'products/show'
+
   root :to => 'mcsubscribe#index'
   post 'mcsubscribe/subscribe', to: 'mcsubscribe#subscribe'
   get 'mcsubscribe/launch'
