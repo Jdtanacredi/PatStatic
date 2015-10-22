@@ -12,7 +12,7 @@ class McsubscribeController < ApplicationController
       begin
         @mc.lists.subscribe(@list_id, {'email' => email})
         respond_to do |format|
-          format.json{render :json => {:message => "Success! Check your email to confirm sign up.", :error => 0}}
+          format.json{render :json => {:message => "ACCESS GRANTED", :error => 0}}
         end
         rescue Mailchimp::ListAlreadySubscribedError
           respond_to do |format|
