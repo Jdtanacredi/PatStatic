@@ -30,6 +30,7 @@ $(document).ready ->
         return
       ), 25)
       return
+    $('.emailMessage').html '<span>' + response.message + '</span>'
     $('.staticBackground').fadeOut 600
     $('.mainContent').fadeOut 600
     $('.randomBackground').fadeOut 600
