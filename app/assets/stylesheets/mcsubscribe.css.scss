@@ -243,12 +243,22 @@ input[type=email]:focus {
 .instaFeed {
   position: relative;
   z-index: 5;
-  padding: 0 4%;
+  padding: 64px 4% 0;
+  .terminalContainer {
+    font-size: .5em;
+    margin-top: 10vh;
+  }
+  h5 {
+    padding-top: 50px;
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: .8em;
+    font-weight: 100;
+  }
+  .downArrow {width: 40px;}
 }
 
 .launchContainer {
-  height: 40vh;
-  padding-top: 150px;
   text-align: center;
   font-size: 2em;
   h1 {
@@ -260,6 +270,7 @@ input[type=email]:focus {
     font-weight: 100;
     margin: 0;
   }
+  .scrollDown {font-size: .7em}
   .previewLink {
     letter-spacing: 2px;
     font-size: .8em;
@@ -284,8 +295,12 @@ input[type=email]:focus {
   text-align: center;
   margin: 0 1% 20px;
   position: relative;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+          box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
   img {
     width: 100%;
+    display: block;
   }
 }
 
@@ -295,16 +310,52 @@ input[type=email]:focus {
   text-align: center;
   margin: 0 1% 20px;
   position: relative;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+          box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
   img {
+    width: 100%;
+    display: block;
+  }
+}
+.instaVideo {
+  float: left;
+  width: 31%;
+  text-align: center;
+  margin: 0 1% 20px;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+          box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+  video {
     width: 100%;
   }
 }
 
 .instaImage:hover .hoverTextContainer,
-.instaImageLarge:hover .hoverTextContainer {
+.instaImageLarge:hover .hoverTextContainer,
+.instaImage:hover .hoverImage,
+.instaImageLarge:hover .hoverImage,
+.instaImage.active .hoverTextContainer,
+.instaImageLarge.active .hoverTextContainer,
+.instaImage.active .hoverImage,
+.instaImageLarge.active .hoverImage {
   opacity: 1;
 }
 
+
+.hoverImage {
+  // background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+}
 .hoverTextContainer {
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-transition: all 0.3s ease;
@@ -316,10 +367,20 @@ input[type=email]:focus {
           right: 0;
           bottom: 0;
           left: 0;
+          display: block;
+          text-align: center;
+          width: 100%;
+          height: 100%;
   p {
-    position: absolute;
-    top: 30%;
-    left: 30%;
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    -webkit-transform: translateY(-50%); /* IE */
+        -ms-transform: translateY(-50%); /* Safari */
+            transform: translateY(-50%); /* Modern */
+    // position: absolute;
+    // top: 30%;
+    // left: 30%;
   }
 }
 
@@ -399,6 +460,9 @@ input[type=email]:focus {
     .fa {margin: 0;}
   }
   .countdownMarkers {display: none;}
+  .instaFeed h5,
+  .instaFeed .scrollDown {font-size: .5em;}
+  .hoverTextContainer p {font-size: 10px;}
 }
 
 @media handheld, screen and (max-width: 400px) {

@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
   # get 'products/index'
-
   # get 'products/show'
   get '*path' => redirect('/')
 
   root :to => 'mcsubscribe#index'
+  # root :to => 'mcsubscribe#launch'
   post 'mcsubscribe/subscribe', to: 'mcsubscribe#subscribe'
-  # get 'mcsubscribe/launch'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
