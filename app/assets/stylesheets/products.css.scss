@@ -60,30 +60,6 @@ body {background-color: #000;}
   }
 }
 
-.instaImageFull {
-  width: 97%;
-  float: left;
-  margin: 0 1% 20px;
-}
-.videoWrapper.instaImageFull  {
-  margin-bottom: 20px;
-}
-
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-  margin-bottom: 60px;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 footer {
   position: fixed;
   bottom: 0;
@@ -105,7 +81,7 @@ footer {
 
 @media handheld, screen and (max-width: 700px) {
   .productImageSection {width: 100%;}
-  .productCopySection {width: 100%;}
+  .productCopySection {width: 95%;}
   .thumbnailContainer {display: none;}
   .thumbnailContainer.mobileThumbContainer {
     display: block;
