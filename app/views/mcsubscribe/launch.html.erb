@@ -2,18 +2,23 @@
 </div>
 <div class="instaFeed clearfix">
   <div class="launchContainer">
-    <h1>10.27.15</h1>
-    <h3>All will be revealed</h3>
-    <div class="terminalContainer">
+    <h3>BUY YOUR EXCLUSIVE GOLD 001 PIGMENT</h3>
+    <h1>10.29.15</h1>
+
+    <a class="previewButton" href="/products/1">
+      <div class="previewNow">
+        preview now
+      </div>
+    </a>
+
+    <!-- <div class="terminalContainer">
       <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true",:authenticity_token => true) do -%>
-      <p><!--<span>01</span>-->&lt; &nbsp;sign up for priority access&nbsp; &gt;</p>
-      <p><!--<span>02</span>--><span class="blinker">&nbsp;</span> &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "enter email here"}) %>
-        <button type="button" id="subscribe">SUBMIT</button>
-        <%#= button_tag(type: 'button', {id: "subscribe"}) %></p>
-      <!-- <p><span>03</span>&lt; &nbsp;<%= submit_tag("Send", {id: "subscribe"}) %></p> -->
-      <!-- <p id="response"><span>04</span>&lt; &nbsp;</p> -->
+      <p>&lt; &nbsp;sign up for priority access&nbsp; &gt;</p>
+      <p><span class="blinker">&nbsp;</span> &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "enter email here"}) %>
+        <button type="button" id="subscribe">SUBMIT</button></p>
       <% end %>
-    </div>
+    </div> -->
+
     <p class="emailMessage"></p>
     <h5>Celebrating the inspiration, illumination and irreverence of all your #LabLove</h5>
     <p class="scrollDown">Scroll down for more #Gold001 obsessions</p>
@@ -22,9 +27,35 @@
       <%#= link_to "preview now", product_path(1), class: 'previewLink' %>
     <!-- </div> -->
   </div>
-  <!-- <div class="emptySpace">
 
-  </div> -->
+  <div class="instaImage firstInsta"><a href="/products/1">
+    <%= image_tag "product/productImage1.jpg", class: "" %>
+    <div class="hoverTextContainer">
+      <p>Click to Preview Gold 001</p>
+    </div>
+    </a>
+  </div>
+
+  <div class="instaImage">
+    <a href="/products/1">
+      <%= image_tag "product/productImage2.jpg", class: "" %>
+      <div class="hoverTextContainer">
+        <p>Click to Preview Gold 001</p>
+      </div>
+    </a>
+  </div>
+
+<!--  -->
+
+  <div class="instaImage lastInsta noMobile">
+    <a href="/products/1">
+    <%= image_tag "product/productImage3.jpg", class: "" %>
+    <div class="hoverTextContainer">
+      <p>Click to Preview Gold 001</p>
+    </div>
+    </a>
+  </div>
+
   <div class="instaImage firstInsta"><a href="#img1">
     <%= image_tag "PatsGold_Fan1.jpg", class: "" %>
     <div class="hoverTextContainer">
@@ -60,6 +91,9 @@
     <p style="text-decoration:none; color:white;">@BESSnyc4</p>
   </a>
 
+  <div class="videoWrapper instaImageFull">
+      <iframe src="https://player.vimeo.com/video/143625042" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
 
 
   <!-- ROW 2 START -->
@@ -321,7 +355,7 @@
     </a>
   </div>
   <a href="#_" class="lightbox" id="img26">
-    <%= image_tag "PatsGold_Fan26.jpg", class: "" %>
+    <%= image_tag "PatsGold_Fan26.png", class: "" %>
       <p style="text-decoration:none; color:white;">@maggiemcdonaldmua</p>
   </a>
 <!-- ROW 11 END -->

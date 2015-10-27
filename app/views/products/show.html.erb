@@ -1,7 +1,11 @@
-<script src="https://js.stripe.com/v2/"></script>
-<script src="https://checkout.quaderno.io/checkout.js"></script>
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script type="text/javascript" src="https://js.quaderno.io/v2/"></script>
 
-<section class="productImageSection">
+<section class="navSpacer">
+  &nbsp;
+</section>
+
+<section class="productImageSection clearfix">
   <div class="mainImageContainer">
     <%= image_tag "product/productImage1.jpg", class: "imageSlide productImage1" %>
     <%= image_tag "product/productImage2.jpg", class: "imageSlide productImage2" %>
@@ -20,69 +24,44 @@
 </div>
 
 <section class="productCopySection">
-  <h1><%#= @product.name %></h1>
+  <h1><%= @product.name %></h1>
   <div class="productDetails">
-    <p>Price: $45.00<%#= @product.price %></p>
+    <p>A multidimensional, microfine pigment that knows no limits.</p>
+    <p style="margin-bottom:15px;">Gold 001 is a limited release of only 1000 units.</p>
+    <p>Price: $40.00</p>
     <p>Net Wt.: 4 grams/0.14 Oz</p>
     <p>QTY: 1 (limit one per customer)</p>
     <p>Free Worldwide Shipping</p>
+    <!-- <div class="soldOut rotate">
+      <p>sold out</p>
+    </div> -->
   </div>
-  <a href="" data-modal="#modal2" class="modal__trigger">BUY NOW</a>
+  <!-- <a href="" data-modal="#modal2" class="modal__trigger">BUY NOW</a> -->
 
-<%#= form_for Charge.new do |f| %>
-  <%#= f.hidden_field :product_id, value: @product.id %>
-  <%#= f.hidden_field :quantity, value: '1' %>
-  <%#= f.hidden_field :stripe_token %>
-  <button type="button" id="customButton">Pay with card</button>
-<%# end %>
+  <!-- <div class="toggleBox clearfix"> -->
+    <!-- <div class="toggleHeader clearfix"> -->
+      <p class="toggleTitle contentsTitle">contents</p>
+      <div class="contentsSection">
+      <!-- <p class="plusMinus">+</p> -->
+    <!-- </div> -->
+    <!-- <div class="openClose"> -->
+        <p>Gold 001 pigment</p>
+        <p>Metal spatula</p>
+        <p>Second life container</p>
+        <p>Mehron mixing liquid</p>
+    <!-- </div> -->
+  <!-- </div> -->
+      </div>
 
-<script type="text/javascript">
-// PRIVATE SANDBOX SECRET sk_test_WjN6uvhQnG38hqqN_oiZ
- // key: "pk_live_xbq8EcoXjbrpSZhhy6D" // public normal key
-
- // EXAMPLE 1 with popup form built in.
-// var handler = QuadernoCheckout.configure({
-//   key: 'pk_test_kyhpqKz3ssMUsLbzsqWj', //Key for sandbox
-//   locale: 'en',
-//   billingAddress: true,
-//   callback: function(data) {
-//     console.log(data);
-//     $('#new_charge').find("#charge_stripe_token").val('foo');
-//   }
-// });
-// $('#customButton').click(function(e) {
-//  handler.open({
-//       type: "charge",
-//       amount: "<%= @product.price %>",
-//       currency: 'USD',
-//       charge: "<%= @chargeJSON %>",
-//       description: 'Awesome charge'
-//       // billing-address:
-//  });
-// });
-
-</script>
-
-  <div class="toggleBox clearfix">
-    <div class="toggleHeader clearfix">
-      <p class="toggleTitle">contents</p>
-      <p class="plusMinus">+</p>
-    </div>
-    <div class="openClose">
-      <p>Gold 001 pigment</p>
-      <p>Second life container</p>
-      <p>Metal spatula</p>
-    </div>
-  </div>
-
-  <div class="toggleBox clearfix">
+  <div class="toggleBox clearfix application">
     <div class="toggleHeader clearfix">
       <p class="toggleTitle">application</p>
-      <p class="plusMinus">+</p>
+      <p class="plusMinus">-</p>
     </div>
-    <div class="openClose">
-      <p>This gilded powder is a unique, one-of-a-kind creation, something Pat created for her personal kit before deciding to make available to the public in a very limited run. The beauty of the thing lies in its dense pigments, foil-like finish, and versatility. Because there is no prescribed purpose, you’re encouraged to be inventive, creative and, utterly crafty. Below, you’ll find a bit of guidance from Pat but the rest will be left up to you.</p>
-      <p>How-To: Word of warning: This delicate, handmade powder will break and crumble. Don’t fret. Included in every order is a second life container to hold the fragments and a tiny spatula for mixing and making it your own. Use it to gild lids, brows, lips, and lashes.</p>
+    <div class="openClose applicationOpenClose">
+      <p>Break the rules and be inventive. Gild eyelids and Cupid’s bow. Electrify brows and lips. Buff into skin for blinding luminosity.</p>
+      <p>Use a brush dampened with mixing liquid to optimize application of pigment. Experiment with the amount of liquid to create different effects, from an intense molten gleam to a sheer golden shimmer. Layer pigment over a primer for intense, long-lasting results.</p>
+      <p>Break and smash the pigment with spatula and store in second life container. Dig in and play fearlessly.</p>
     </div>
   </div>
 
@@ -90,202 +69,64 @@
     <%= image_tag "product/productImage1.jpg", class: "productThumb productImage1" %>
     <%= image_tag "product/productImage2.jpg", class: "productThumb productImage2" %>
     <%= image_tag "product/productImage3.jpg", class: "productThumb productImage3" %>
-    <%= image_tag "product/productImage4.jpg", class: "productThumb productImage4" %>
-    <%= image_tag "product/productImage5.jpg", class: "productThumb productImage5" %>
+    <%#= image_tag "product/productImage4.jpg", class: "productThumb productImage4" %>
+    <%#= image_tag "product/productImage5.jpg", class: "productThumb productImage5" %>
+  </div>
+
+  <div class="videoWrapper">
+    <iframe src="https://player.vimeo.com/video/143704196" width="500" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
 </section>
-
-<div id="modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
-		<div class="modal__dialog">
-			<div class="modal__content">
-        <form action="" method="POST" id="payment-form"
-      data-gateway-key="pk_test_6cbMwNi5VCVbHbIAAcmzXIdL"
-      data-key="pk_test_kyhpqKz3ssMUsLbzsqWj"
-      data-charge="<%#= @chargeJSON %>"
-      data-amount="4000"
-      data-taxes="excluded">
-
-      <span class="payment-errors"></span>
-
-      <fieldset>
-        <legend>Billing Address</legend>
-        <div class="form-row">
-          <label>
-            <span>* First Name / Company Name</span>
-            <input data-quaderno="first-name"/>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>Last Name</span>
-            <input data-quaderno="last-name"/>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>Email</span>
-            <input data-quaderno="email"/>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>Street Line 1</span>
-            <input data-quaderno="street-line-1"/>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>Street Line 2</span>
-            <input data-quaderno="street-line-2"/>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>City</span>
-            <input data-quaderno="city"/>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>Postal Code</span>
-            <input data-quaderno="postal-code"/>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>Region</span>
-            <input data-quaderno="region"/>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>Country</span>
-            <select data-quaderno="country">
-              <option value="US" selected>United States</option>
-              <option value="GB">United Kingdom</option>
-              <option value="DE">Germany</option>
-              <option value="FR">France</option>
-              <option value="IT">Italy</option>
-              <option value="ES">Spain</option>
-              <option value="CA">Canada</option>
-              <option value="AU">Australia</option>
-            </select>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>VAT Number</span>
-            <input data-quaderno="vat-number"/>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>Coupon</span>
-            <input data-quaderno="coupon"/>
-          </label>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>Credit Card Data</legend>
-        <div class="form-row">
-          <label>
-            <span>* Card Number</span>
-            <input class="card-number" data-quaderno="number"/>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>* CVC</span>
-            <input class="card-cvc" data-quaderno="cvc" type="password"/>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            <span>* Expiration (MM/YYYY)</span>
-            <input class="card-expiry-month" type="text" size="2" data-quaderno="exp-month"/>
-          </label>
-          <span> / </span>
-          <input class="card-expiry-year" type="text" size="4" data-quaderno="exp-year"/>
-        </div>
-      </fieldset>
-
-      <button type="submit">Pay Now</button>
-    </form>
-				<!-- modal close button -->
-				<a href="" class="modal__close demo-close">
-					<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
-				</a>
-			</div>
-		</div>
-	</div>
 
 <script type="text/javascript">
   // EXAMPLE 2 with custom form.
   var stripeResponseHandler = function(status, response) {
-          var $form = $('#payment-form');
-          debugger;
-          if (response.error) {
-            debugger;
-            // Show the errors on the form
-            $form.find('.payment-errors').text(response.error.message);
-            $form.find('button').prop('disabled', false);
-          } else {
-            // token contains id, last4, and card type
-            var token = response.id;
-            // Insert the token into the form so it gets submitted to the server
-            $form.append($('<input type="hidden" data-quaderno="cardToken" />').val(token));
-            // create the charge in Stripe via Quaderno and submit
-            Quaderno.createCharge({
-              success: function(status, response){
-                // response contains the message and the Stripe customer id
-                $form.append($('<input type="hidden" name="transactionDetails" data-quaderno="transactionDetails" />').val(response.details));
-                // and re-submit the form
-                $form.get(0).submit();
-              },
-              error: function(status, response){
-                $form.find('.payment-errors').text(response.message);
-                $form.find('button').prop('disabled', false);
-              }
-            });
-          }
-        };
-        jQuery(function($) {
-          $('#payment-form').click(function(e) {
-            var $form = $(this);
-            // This identifies your website in the createToken call below
-            debugger;
-            Stripe.setPublishableKey($(this).data('gateway-key'));
-            // Disable the submit button to prevent repeated clicks
-            $form.find('button').prop('disabled', true);
-            // Get the card token from Stripe
-            Stripe.card.createToken({
-              number: $('.card-number').val(),
-              cvc: $('.card-cvc').val(),
-              exp_month: $('.card-expiry-month').val(),
-              exp_year: $('.card-expiry-year').val()
-            }, stripeResponseHandler);
-            // Prevent the form from submitting with the default action
-            return false;
-          });
-        });
-
-  </script>
-
-
-
+    var $form = $('#payment-form');
+    if (response.error) {
+      // Show the errors on the form
+      $form.find('.payment-errors').text(response.error.message);
+      $form.find('button').prop('disabled', false);
+    } else {
+      // token contains id, last4, and card type
+      var token = response.id;
+      // Insert the token into the form so it gets submitted to the server
+      $form.append($('<input type="hidden" data-quaderno="cardToken" />').val(token));
+      $form.append($('<input type="hidden" name="stripe-token" />').val(token));
+      // create the charge in Stripe via Quaderno and submit
+      Quaderno.createCharge({
+        success: function(status, response){
+          // response contains the message and the Stripe customer id
+          $form.append($('<input type="hidden" name="transactionDetails" data-quaderno="transactionDetails" />').val(response.details));
+          // and re-submit the form
+          $form.get(0).submit();
+        },
+        error: function(status, response){
+          $form.find('.payment-errors').text(response.message);
+          $form.find('button').prop('disabled', false);
+        }
+      });
+    }
+  };
+  jQuery(function($) {
+    $('#pay-now').click(function(e) {
+      var $form = $(this);
+      // This identifies your website in the createToken call below
+      // Stripe.setPublishableKey($(this).data('gateway-key'));
+      Stripe.setPublishableKey("<%= ENV['STRIPE_PUBLISHABLE_KEY'] %>");
+      // Disable the submit button to prevent repeated clicks
+      $form.find('button').prop('disabled', true);
+      // Get the card token from Stripe
+      Stripe.card.createToken({
+        number: $('.card-number').val(),
+        cvc: $('.card-cvc').val(),
+        exp_month: $('.card-expiry-month').val(),
+        exp_year: $('.card-expiry-year').val()
+      }, stripeResponseHandler);
+      // Prevent the form from submitting with the default action
+      return false;
+    });
+  });
+</script>
 
 
 <script type="text/javascript">
@@ -492,6 +333,13 @@ Modal.init();
   <a class="list-group-item" target="_blank" href="https://www.facebook.com/PatMcGrathReal"><i class="fa fa-facebook-square"></i>&nbsp;</a>
   <a class="list-group-item" target="_blank" href="https://twitter.com/patmcgrathreal"><i class="fa fa-twitter"></i>&nbsp;</a>
   <div class="footerBranding">
-    &#35;Gold001 <span>|</span> <a href="mailto:contact@patmcgrath.com" target="_top">Contact</a> <span>|</span> <a href="#">Media</a>
+    &#35;Gold001 <span>|</span> <a href="mailto:contact@patmcgrath.com" target="_top">Contact</a> <span>|</span> Waiting List:
+
+    <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true",:authenticity_token => true) do -%>
+    <!-- <p>&lt; &nbsp;sign up for priority access&nbsp; &gt;</p> -->
+    <%= email_field(:email, :address, {id: "email", placeholder: "enter email"}) %>
+      <button type="button" id="subscribe">SUBMIT</button>
+    <% end %>
+    <span class="newsletterConfirmation"></span>
   </div>
 </footer>
