@@ -4,6 +4,7 @@ gem 'mailchimp-api'
 gem "font-awesome-rails"
 gem "figaro"
 gem 'jwt'
+gem 'jquery-turbolinks'
 
 group :development, :test do
 	gem 'pry'

@@ -38,7 +38,7 @@ $(document).ready ->
     $('#subscribe').blur().attr('disabled','disabled')
     console.log response
 
-  $("#mcsubscribe").submit ->
+  $("#mcsubscribe").submit (e) ->
     $.ajax({
       type: "POST",
       url: "/mcsubscribe/subscribe",
@@ -69,6 +69,7 @@ $(document).ready ->
         console.log data
         return false
     })
+    e.preventDefault()
     return false
 
 

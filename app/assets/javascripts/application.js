@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= jquery.countdown.min.js
 //= require turbolinks
+//= require jquery.turbolinks
 //= require_tree .
