@@ -35,7 +35,7 @@ $(document).ready ->
     $('.confirmationTerminal').css 'visibility', 'visible'
     $('.newsletterConfirmation').text 'success'
     $('#email').blur()
-    $('#subscribe').blur()
+    $('#subscribe').blur().attr('disabled','disabled')
     console.log response
 
   $("#mcsubscribe").submit ->
@@ -69,6 +69,7 @@ $(document).ready ->
         console.log data
         return false
     })
+    return false
 
 
 imgArray = [
