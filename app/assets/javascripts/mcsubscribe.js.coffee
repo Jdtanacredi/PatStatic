@@ -38,7 +38,7 @@ $(document).ready ->
     $('#subscribe').blur()
     console.log response
 
-  $("#subscribe").click ->
+  $("#mcsubscribe").submit ->
     $.ajax({
       type: "POST",
       url: "/mcsubscribe/subscribe",
