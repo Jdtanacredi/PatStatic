@@ -306,9 +306,9 @@ input[type=email]:focus {
   }
 }
 
-.previewButton {
-  text-decoration: none;
+
   .previewNow {
+    cursor: pointer;
     background: #000;
     color: #fff;
     width: 250px;
@@ -316,7 +316,7 @@ input[type=email]:focus {
     margin: 20px auto;
     text-transform: uppercase;
   }
-}
+
 .emptySpace {
   width: 100vw;
   height: 100vh;
@@ -351,33 +351,11 @@ input[type=email]:focus {
     display: block;
   }
 }
-
-
 .instaImageFull {
   width: 97%;
   float: left;
   margin: 0 1% 20px;
 }
-
-.videoWrapper.instaImageFull  {
-  margin-bottom: 20px;
-}
-
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-  margin-bottom: 60px;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 .instaVideo {
   float: left;
   width: 31%;
@@ -391,8 +369,6 @@ input[type=email]:focus {
     width: 100%;
   }
 }
-
-
 
 .instaImage:hover .hoverTextContainer,
 .instaImageLarge:hover .hoverTextContainer,
