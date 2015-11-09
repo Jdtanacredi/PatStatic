@@ -21,7 +21,7 @@
           <%= f.text_field :last_name, placeholder: 'LAST NAME', class: 'validateThis' %>
           <%= f.email_field :email, placeholder: 'EMAIL', class: 'validateThis' %>
           <div id="form_errors"></div>
-          <p class="contestCheckbox"><%= check_box_tag :policy %> <span>I accept and agree to the <a class="modal__trigger" data-modal="#modal2" href="#">T&C</a>. By entering this sweepstakes I agree to receive newsletters from Vogue & Pat McGrath Labs.</span> <%#= label_tag :policy, "I accept and agree to the T&C. By entering this sweepstakes I agree to receive newsletters from Vogue & Pat McGrath Labs." %></p>
+          <p class="contestCheckbox"><%= check_box_tag :policy %> <span>I accept and agree to the <a class="modal__trigger" data-modal="#modal2" href="#">T&C</a>. By entering this sweepstakes I agree to receive newsletters from Vogue & Pat McGrath Labs.</span></p>
           <%= f.submit "click to win", class: 'contest-submit' %>
         <% end %>
         <p class="checkbox-message">Please check the T&C box to enter</p>
@@ -35,14 +35,6 @@
     </div>
 
 </div>
-<footer>
-  <a class="list-group-item" target="_blank" href="https://instagram.com/patmcgrathreal/"><i class="fa fa-instagram"></i>&nbsp;</a>
-  <a class="list-group-item" target="_blank" href="https://www.facebook.com/PatMcGrathReal"><i class="fa fa-facebook-square"></i>&nbsp;</a>
-  <a class="list-group-item" target="_blank" href="https://twitter.com/patmcgrathreal"><i class="fa fa-twitter"></i>&nbsp;</a>
-  <div class="footerBranding">
-    &#35;Gold001 <span>|</span> <a href="mailto:contact@patmcgrath.com" target="_top">Contact</a> <span>|</span> <a href="mailto:customercare@patmcgrath.com" target="_top">Customer Service</a>
-  </div>
-</footer>
 
 <div id="modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
 	<div class="modal__dialog">
