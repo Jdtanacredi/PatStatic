@@ -81,22 +81,22 @@
 </script>
 
 
-<footer>
+<!-- <footer>
   <a class="list-group-item" target="_blank" href="https://instagram.com/patmcgrathreal/"><i class="fa fa-instagram"></i>&nbsp;</a>
   <a class="list-group-item" target="_blank" href="https://www.facebook.com/PatMcGrathReal"><i class="fa fa-facebook-square"></i>&nbsp;</a>
   <a class="list-group-item" target="_blank" href="https://twitter.com/patmcgrathreal"><i class="fa fa-twitter"></i>&nbsp;</a>
   <div class="footerBranding">
     &#35;Gold001 <span>|</span> <a href="mailto:contact@patmcgrath.com" target="_top">Contact</a> <span>|</span> Waiting List:
 
-    <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true",:authenticity_token => true) do -%>
+    <%#= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true",:authenticity_token => true) do -%>
     <!-- <p>&lt; &nbsp;sign up for priority access&nbsp; &gt;</p> -->
-    <%= email_field(:email, :address, {id: "email", placeholder: "enter email"}) %>
-      <input id="subscribe" type="submit">
+    <%#= email_field(:email, :address, {id: "email", placeholder: "enter email"}) %>
+      <!-- <input id="subscribe" type="submit"> -->
       <!-- <button type="button" id="subscribe">SUBMIT</button> -->
-    <% end %>
-    <span class="newsletterConfirmation"></span>
-  </div>
-</footer>
+    <%# end %>
+    <!-- <span class="newsletterConfirmation"></span> -->
+  <!-- </div> -->
+<!-- </footer> -->
 
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script type="text/javascript" src="https://js.quaderno.io/v2/"></script>

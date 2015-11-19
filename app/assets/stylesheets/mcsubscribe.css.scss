@@ -1,3 +1,5 @@
+// ALL PAGE STYLING START
+
 @font-face {
   font-family: 'courier';
   src: url(asset_path('courier.eot'));
@@ -23,6 +25,22 @@ body {
   font-family: 'courier';
   background: #131113;
 }
+
+footer {
+  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background: #000;
+  color: #a9a9a9;
+  a { text-decoration: none; color: #a9a9a9;}
+  .footerBranding {display: inline-block;}
+}
+// ALL PAGE STYLING END
+
+
 .headerContainer a {text-decoration: none; color: inherit;}
 .mainContent,
 .randomBackground,

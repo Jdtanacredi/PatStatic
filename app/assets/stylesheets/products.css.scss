@@ -23,7 +23,7 @@ body {background-color: #000;}
   width: 45%;
   margin: 0 2.5%;
   float: left;
-  // color: #fff;
+  color: #fff;
   padding-top: 70px;
   h1 {
     margin: 0;
@@ -105,7 +105,7 @@ body {background-color: #000;}
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .videoWrapper iframe {
 	position: absolute;
@@ -119,19 +119,6 @@ body {background-color: #000;}
   display: none;
 }
 
-footer {
-  z-index: 5;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 15px 0;
-  background: #000;
-  color: #a9a9a9;
-  a { text-decoration: none; color: #a9a9a9;}
-  .footerBranding {display: inline-block;}
-}
-
 .quaderno-button-el {
   background-color: #000;
   color: #fff;
@@ -140,6 +127,10 @@ footer {
 }
 .thumbnailContainer.mobileThumbContainer {display: none;}
 
+
+@media handheld, screen and (max-width: 1000px) {
+  .videoWrapper {margin-bottom: 140px;}
+}
 
 @media handheld, screen and (max-width: 850px) {
   .productImageSection {width: 100%;}
