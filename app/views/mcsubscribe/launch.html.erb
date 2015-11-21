@@ -4,12 +4,12 @@
   <div class="launchContainer">
     <!-- <h3>BUY YOUR EXCLUSIVE GOLD 001 PIGMENT</h3> -->
     <!-- <h1>10.29.15</h1> -->
-    <h1 style="margin-top:80px;">< Sign-up for release notifications ></h1>
+    <!-- <h1 style="margin-top:80px;">< Sign-up for release notifications ></h1> -->
       <!-- <div class="previewNow">click to win</div> -->
 
 <div class="terminalContainer">
       <%= form_tag('/mcsubscribe/subscribe', method: "post", id: "mcsubscribe", remote: "true",:authenticity_token => true) do -%>
-<p><!--<span>01</span>-->&lt; &nbsp;sign up for priority access&nbsp; &gt;</p>
+<p><!--<span>01</span>-->&lt; &nbsp;sign up for release notifications&nbsp; &gt;</p>
 <p><!--<span>02</span>--><span class="blinker">&nbsp;</span> &nbsp;<%= email_field(:email, :address, {id: "email", placeholder: "enter email"}) %>
   <!-- <button type="button" id="subscribe">SUBMIT</button> -->
   <%#= button_tag(type: 'button', {id: "subscribe"}) %><%= submit_tag("Send", {id: "subscribe"}) %></p>
