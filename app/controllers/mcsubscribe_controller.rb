@@ -25,7 +25,7 @@ class McsubscribeController < ApplicationController
         rescue Mailchimp::Error => ex
             if ex.message
               respond_to do |format|
-                format.json{render :json => {:message => "There is an error. Please enter valid email id.", :error => 3}}
+                format.json{render :json => {:message => "There is an error. Please enter valid email id.", :error => 3, :ex => ex.message}}
               end
             else
               respond_to do |format|
