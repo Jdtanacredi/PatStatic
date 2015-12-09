@@ -107,6 +107,10 @@ body {background-color: #000;}
 	height: 0;
   margin-bottom: 70px;
 }
+.videoWrapper.videoWrapperInsta {
+  margin-bottom: 40px;
+}
+
 .videoWrapper iframe {
 	position: absolute;
 	top: 0;
@@ -130,6 +134,9 @@ body {background-color: #000;}
 
 @media handheld, screen and (max-width: 1000px) {
   .videoWrapper {margin-bottom: 140px;}
+  .videoWrapper.videoWrapperInsta {
+    margin-bottom: 40px;
+  }
 }
 
 @media handheld, screen and (max-width: 850px) {
@@ -149,6 +156,9 @@ body {background-color: #000;}
 }
 @media handheld, screen and (max-width: 600px) {
   .videoWrapper {margin-bottom: 160px;}
+  .videoWrapper.videoWrapperInsta {
+    margin-bottom: 40px;
+  }
 }
 
 // MODAL STYLING
